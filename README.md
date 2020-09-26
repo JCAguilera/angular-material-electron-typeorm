@@ -1,4 +1,4 @@
-[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Angular Material Logo](http://u.cubeupload.com/JuankyVader/angularmaterial.png)]() [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/) [![TypeORM Logo](http://u.cubeupload.com/JuankyVader/rsz20165699.png)](https://typeorm.io/)
+[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Angular Material Logo](http://u.cubeupload.com/JuankyVader/angularmaterial.png)](https://material.angular.io/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/) [![TypeORM Logo](http://u.cubeupload.com/JuankyVader/rsz20165699.png)](https://typeorm.io/)
 
 ![Maintained][maintained-badge]
 [![Make a pull request][prs-badge]][prs]
