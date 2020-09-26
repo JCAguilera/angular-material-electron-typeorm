@@ -1,9 +1,9 @@
 {
   "env": {
-      "browser": true,
-      "node": true,
-      "es6": true,
-      "es2017": true
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "es2017": true
   },
   "overrides": [
     {
@@ -25,20 +25,19 @@
         ],
         "sourceType": "module",
         "ecmaFeatures": {
-            "modules": true
+          "modules": true
         }
       },
-      "plugins": [
-        "@typescript-eslint",
-        "@angular-eslint/eslint-plugin"
-      ],
+      "plugins": ["@typescript-eslint", "@angular-eslint/eslint-plugin"],
       "rules": {
         "@typescript-eslint/indent": [
-          "error", 2, {
+          "error",
+          2,
+          {
             "SwitchCase": 1,
-            "CallExpression": {"arguments": "first"},
-            "FunctionExpression": {"parameters": "first"},
-            "FunctionDeclaration": {"parameters": "first"}
+            "CallExpression": { "arguments": "first" },
+            "FunctionExpression": { "parameters": "first" },
+            "FunctionDeclaration": { "parameters": "first" }
           }
         ],
         "@typescript-eslint/no-empty-function": 0,
@@ -49,6 +48,7 @@
         "@typescript-eslint/no-unsafe-assignment": 0,
         "@typescript-eslint/no-unsafe-return": 0,
         "@typescript-eslint/no-floating-promises": 0,
+        "@typescript-eslint/no-misused-promises": 0,
         "@angular-eslint/use-injectable-provided-in": "error",
         "@angular-eslint/no-attribute-decorator": "error"
       }
@@ -58,8 +58,8 @@
       "parser": "@angular-eslint/template-parser",
       "plugins": ["@angular-eslint/template"],
       "rules": {
-          "@angular-eslint/template/banana-in-a-box": "error",
-          "@angular-eslint/template/no-negated-async": "error"
+        "@angular-eslint/template/banana-in-a-box": "error",
+        "@angular-eslint/template/no-negated-async": "error"
       }
     }
   ]

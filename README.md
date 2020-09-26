@@ -1,7 +1,6 @@
-[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/)
+[![Angular Logo](https://www.vectorlogo.zone/logos/angular/angular-icon.svg)](https://angular.io/) [![Angular Material Logo](http://u.cubeupload.com/JuankyVader/angularmaterial.png)]() [![Electron Logo](https://www.vectorlogo.zone/logos/electronjs/electronjs-icon.svg)](https://electronjs.org/) [![TypeORM Logo](http://u.cubeupload.com/JuankyVader/rsz20165699.png)](https://typeorm.io/)
 
 ![Maintained][maintained-badge]
-[![Travis Build Status][build-badge]][build]
 [![Make a pull request][prs-badge]][prs]
 [![License](http://img.shields.io/badge/Licence-MIT-brightgreen.svg)](LICENSE.md)
 
@@ -11,12 +10,16 @@
 
 # Introduction
 
-Bootstrap and package your project with Angular 10 and Electron 9 (Typescript + SASS + Hot Reload) for creating Desktop applications.
+Please check the original author repo ([@maximegris angular-electron](https://github.com/maximegris/angular-electron)) if you just want a quick Angular 10 and Electron 9 boilerplate.
+
+Bootstrap and package your project with Angular 10, Angular Material, Electron 9 and TypeORM (Typescript + SASS + Hot Reload) for creating Desktop applications.
 
 Currently runs with:
 
 - Angular v10.0.14
+- Angular Material
 - Electron v9.3.0
+- TypeORM
 - Electron Builder v22.8.0
 
 With this sample, you can :
@@ -33,23 +36,22 @@ With this sample, you can :
 
 Clone this repository locally :
 
-``` bash
-git clone https://github.com/maximegris/angular-electron.git
+```bash
+git clone https://github.com/JCAguilera/angular-material-electron-typeorm.git
 ```
 
 Install dependencies with npm :
 
-``` bash
+```bash
 npm install
 ```
 
 There is an issue with `yarn` and `node_modules` when the application is built by the packager. Please use `npm` as dependencies manager.
 
-
 If you want to generate Angular components with Angular-cli , you **MUST** install `@angular/cli` in npm global context.
 Please follow [Angular-cli documentation](https://github.com/angular/angular-cli) if you had installed a previous version of `angular-cli`.
 
-``` bash
+```bash
 npm install -g @angular/cli
 ```
 
@@ -73,30 +75,19 @@ Maybe you only want to execute the application in the browser with hot reload ? 
 
 ## Included Commands
 
-|Command|Description|
-|--|--|
-|`npm run ng:serve`| Execute the app in the browser |
-|`npm run build`| Build the app. Your built files are in the /dist folder. |
-|`npm run build:prod`| Build the app with Angular aot. Your built files are in the /dist folder. |
-|`npm run electron:local`| Builds your application and start electron
-|`npm run electron:build`| Builds your application and creates an app consumable based on your operating system |
+| Command                  | Description                                                                          |
+| ------------------------ | ------------------------------------------------------------------------------------ |
+| `npm run ng:serve`       | Execute the app in the browser                                                       |
+| `npm run build`          | Build the app. Your built files are in the /dist folder.                             |
+| `npm run build:prod`     | Build the app with Angular aot. Your built files are in the /dist folder.            |
+| `npm run electron:local` | Builds your application and start electron                                           |
+| `npm run electron:build` | Builds your application and creates an app consumable based on your operating system |
 
 **Your application is optimised. Only /dist folder and node dependencies are included in the executable.**
 
 ## You want to use a specific lib (like rxjs) in electron main thread ?
 
 YES! You can do it! Just by importing your library in npm dependencies section (not **devDependencies**) with `npm install --save`. It will be loaded by electron during build phase and added to your final package. Then use your library by importing it in `main.ts` file. Quite simple, isn't it ?
-
-## E2E Testing
-
-E2E Test scripts can be found in `e2e` folder.
-
-|Command|Description|
-|--|--|
-|`npm run e2e`| Execute end to end tests |
-
-Note: To make it work behind a proxy, you can add this proxy exception in your terminal  
-`export {no_proxy,NO_PROXY}="127.0.0.1,localhost"`
 
 ## Branch & Packages version
 
@@ -106,18 +97,19 @@ Note: To make it work behind a proxy, you can add this proxy exception in your t
 - Angular 7 & Electron 3 : Branch [angular7](https://github.com/maximegris/angular-electron/tree/angular7)
 - Angular 8 & Electron 7 : Branch [angular8](https://github.com/maximegris/angular-electron/tree/angular8)
 - Angular 9 & Electron 7 : Branch [angular9](https://github.com/maximegris/angular-electron/tree/angular9)
-- Angular 10 & Electron 9 : (master)
+- Angular 10 & Electron 9 : Master branch [original repo](https://github.com/maximegris/angular-electron)
+- Angular 10 & Angular Material & Electron 9 & TypeORM: (master)
 
-[build-badge]: https://travis-ci.org/maximegris/angular-electron.svg?branch=master&style=style=flat-square
-[build]: https://travis-ci.org/maximegris/angular-electron
+[build-badge]: https://travis-ci.org/JCAguilera/angular-material-electron-typeorm.svg?branch=master&style=style=flat-square
+[build]: https://travis-ci.org/JCAguilera/angular-material-electron-typeorm
 [license-badge]: https://img.shields.io/badge/license-Apache2-blue.svg?style=style=flat-square
-[license]: https://github.com/maximegris/angular-electron/blob/master/LICENSE.md
+[license]: https://github.com/JCAguilera/angular-material-electron-typeorm/blob/master/LICENSE.md
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
 [prs]: http://makeapullrequest.com
-[github-watch-badge]: https://img.shields.io/github/watchers/maximegris/angular-electron.svg?style=social
-[github-watch]: https://github.com/maximegris/angular-electron/watchers
-[github-star-badge]: https://img.shields.io/github/stars/maximegris/angular-electron.svg?style=social
-[github-star]: https://github.com/maximegris/angular-electron/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-electron!%20https://github.com/maximegris/angular-electron%20%F0%9F%91%8D
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/maximegris/angular-electron.svg?style=social
+[github-watch-badge]: https://img.shields.io/github/watchers/JCAguilera/angular-material-electron-typeorm.svg?style=social
+[github-watch]: https://github.com/JCAguilera/angular-material-electron-typeorm/watchers
+[github-star-badge]: https://img.shields.io/github/stars/JCAguilera/angular-material-electron-typeorm.svg?style=social
+[github-star]: https://github.com/JCAguilera/angular-material-electron-typeorm/stargazers
+[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20angular-material-electron-typeorm!%20https://github.com/JCAguilera/angular-material-electron-typeorm%20%F0%9F%91%8D
+[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/JCAguilera/angular-material-electron-typeorm.svg?style=social
 [maintained-badge]: https://img.shields.io/badge/maintained-yes-brightgreen

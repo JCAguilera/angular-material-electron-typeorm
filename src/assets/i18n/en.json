@@ -1,12 +1,23 @@
 {
   "PAGES": {
-      "HOME": {
-          "TITLE": "App works !",
-          "GO_TO_DETAIL": "Go to Detail"
+    "HOME": {
+      "TITLE": "Home Page",
+      "INSTRUCTIONS": "Add posts to the list. Click to remove.",
+      "NEWPOST": {
+        "TITLE": "Title",
+        "TEXT": "Text",
+        "ADD": "Add Post"
       },
-      "DETAIL": {
-        "TITLE": "Detail page !",
-        "BACK_TO_HOME": "Back to Home"
+      "POSTS": {
+        "TITLE": "Posts list"
+      }
+    },
+    "DETAIL": {
+      "TITLE": "Detail Page",
+      "BACK_TO_HOME": "Back to Home"
     }
+  },
+  "MENU": {
+    "GO_TO_DETAIL": "Go to Detail"
   }
 }

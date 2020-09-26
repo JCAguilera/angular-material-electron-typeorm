@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary" class="mat-elevation-z3">
+  <button mat-icon-button>
+    <mat-icon>menu</mat-icon>
+  </button>
+  {{ title }}
+  <span fxFlex></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item [routerLink]="['/detail']">
+      {{ "MENU.GO_TO_DETAIL" | translate }}
+    </a>
+  </mat-menu>
+</mat-toolbar>
+<div class="app-content">
+  <router-outlet></router-outlet>
+</div>
